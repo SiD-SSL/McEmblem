@@ -22,12 +22,25 @@
 
 
 /*---------------- HOVER COLOR -----------------*/
-a:hover {color: var(--hover) !important;}
+a:hover, 
+nav > ul > li:hover { 
+    color: var(--hover) !important; 
+}
+
+ul.drop-menu li:hover a{
+    color: white !important;
+}
+
+ul.drop-menu li:hover{
+    background-color: var(--hover);
+}
 
 
 
 /*---------------- SHADOW COLOR ----------------*/
-.form-control:focus { box-shadow: var(--shadow); }
+.form-control:focus { 
+    box-shadow: var(--shadow); 
+}
 
 
 /*----------------- TEXT COLOR -----------------*/

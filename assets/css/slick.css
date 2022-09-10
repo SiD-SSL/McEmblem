@@ -117,3 +117,34 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.slick-arrow.left-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-size: 20px;
+    z-index: 99;
+    transform: translate(0, -50%);
+    background-color: var(--primary);
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.slick-arrow.right-arrow{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 20px;
+    z-index: 99;
+    transform: translate(0, -50%);
+    background-color: var(--primary);
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+}

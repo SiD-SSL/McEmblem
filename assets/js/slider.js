@@ -1,7 +1,7 @@
 // ====================================================
 //       		       DEMO SLIDER JS                //
 // ====================================================
-$('.demo-slider').slick({
+$('.banner-slider').slick({
     dots: false,
 	arrows: true,
     autoplay: false,
@@ -11,8 +11,8 @@ $('.demo-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: false,
-    prevArrow: '<i class="fas fa-caret-left up-arrow"></i>',
-	nextArrow: '<i class="fas fa-caret-right bottom-arrow"></i>',
+    prevArrow: '<i class="fas fa-caret-left left-arrow"></i>',
+	nextArrow: '<i class="fas fa-caret-right right-arrow"></i>',
 	responsive: [
 		{
 		  breakpoint: 1200,

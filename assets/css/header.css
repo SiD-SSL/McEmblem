@@ -1,0 +1,107 @@
+.top-header{
+    background: linear-gradient(to bottom, #3084e6, #fff);
+}
+.header {
+    transition: all .5s;
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+}
+.header .social .social-item{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: var(--primary);
+    color: white;
+}
+.header .social .social-item i{
+    font-size: 14px;
+}
+.header .social .social-item:hover{
+    background-color: white !important;
+}
+.header .social .social-item:hover i{
+    color: var(--primary) !important;
+}
+.header .search{
+    position: relative;
+    float: right;
+    width: 85%;
+}
+.header .org-title{
+    font-weight: bold;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+.header .logo-img {
+    width: 110px;
+    height: 126px;
+}
+.header .header-left a,
+.header .header-left span{
+    color: var(--primary);
+}
+.header .header-left .phone i,
+.header .header-left .email i{
+    color: var(--primary);
+}
+.header .header-left .phone a:hover,
+.header .header-left .email a:hover{
+    text-decoration: underline;
+}
+.header .search input{
+    padding: 8px 10px;
+} 
+.header .search button {
+    position: absolute;
+    right: 11px;
+    top: 8px;
+    border: none;
+    background: none;
+}
+.header .search button i{
+    font-size: 18px;
+    color: var(--primary);
+    cursor: pointer;
+}
+.header .header-right span {
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 14px;
+}
+.header .header-right span a{
+    color: var(--primary);
+}
+.header .header-right .login-register{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.header a:hover{
+    text-decoration: underline;
+}
+.header .cart{
+    margin: 10px 0;    
+    text-align: right;
+}
+.header .cart i{
+    font-size: 24px;
+    color: var(--primary);
+}
+.header .cart a {
+    font-size: 14px;
+    color: var(--primary);
+    line-height: 16px;
+}
+.header .cart p {
+    font-size: 14px;
+    text-align: left;
+}
