@@ -4,10 +4,10 @@
 $('.banner-slider').slick({
     dots: false,
 	arrows: true,
-    autoplay: false,
-	autoplaySpeed: 2000,
+    autoplay: true,
+	autoplaySpeed: 1500,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: false,
