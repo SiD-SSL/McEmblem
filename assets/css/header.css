@@ -1,5 +1,7 @@
 .header-section{
-    background: linear-gradient(to bottom, #3084e6, #fff);
+    /* background: linear-gradient(to bottom, #0A8647, #fff); */
+    background: rgb(10,134,71);
+    background: linear-gradient(180deg, rgba(10,134,71,0.9) 0%, rgba(255,255,255,1) 100%);
 }
 .header {
     transition: all .5s;
@@ -13,17 +15,17 @@
     line-height: 20px;
     border-radius: 3px;
     text-align: center;
-    background-color: var(--primary);
+    background-color: var(--black);
     color: white;
 }
 .header .social .social-item i{
     font-size: 14px;
 }
 .header .social .social-item:hover{
-    background-color: white !important;
+    background-color: var(--hover) !important;
 }
 .header .social .social-item:hover i{
-    color: var(--primary) !important;
+    color: white !important;
 }
 .header .search{
     position: relative;
@@ -32,7 +34,7 @@
 }
 .header .org-title{
     font-weight: bold;
-    color: var(--primary);
+    color: var(--black);
     text-transform: uppercase;
 }
 .header .logo-img {
@@ -41,11 +43,11 @@
 }
 .header .header-left a,
 .header .header-left span{
-    color: var(--primary);
+    color: var(--black);
 }
 .header .header-left .phone i,
 .header .header-left .email i{
-    color: var(--primary);
+    color: var(--black);
 }
 .header .header-left .phone a:hover,
 .header .header-left .email a:hover{
@@ -63,18 +65,18 @@
 }
 .header .search button i{
     font-size: 18px;
-    color: var(--primary);
+    color: var(--black);
     cursor: pointer;
 }
 .header .header-right span {
-    color: var(--primary);
+    color: var(--black);
     display: flex;
     align-items: center;
     justify-content: end;
     font-size: 14px;
 }
 .header .header-right span a{
-    color: var(--primary);
+    color: var(--black);
 }
 .header .header-right .login-register{
     display: inline-block;
@@ -94,11 +96,11 @@
 }
 .header .cart i{
     font-size: 24px;
-    color: var(--primary);
+    color: var(--black);
 }
 .header .cart a {
     font-size: 14px;
-    color: var(--primary);
+    color: var(--black);
     line-height: 16px;
 }
 .header .cart p {

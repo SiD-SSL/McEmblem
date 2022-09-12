@@ -1,20 +1,20 @@
-.navbar {
-    border-top: 1px dashed #1135e5;
-    border-bottom: 3px solid #1135e5;
-    justify-content: center;
-    text-align: center;
-    padding: 0;
-    margin-top: 10px;
-}
+  .navbar {
+      border-top: 1px dashed var(--primary);
+      border-bottom: 3px solid var(--primary);
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      margin-top: 10px;
+  }
 
-  nav > ul {
+  .navbar > .navbar-list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: inline-block;
     border-radius: 5px;
   }
-  nav > ul > li {
+  .navbar > .navbar-list > .navbar-item {
     float: left;
     padding: 5px 10px;
     position: relative;
@@ -22,9 +22,15 @@
     font-size: 14px;
     color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
+    transition: 0.4s;
   }
-  
-  ul.drop-menu {
+  .navbar > .navbar-list > .navbar-item:hover{
+    background: var(--hover);
+  }
+  .navbar > .navbar-list > .navbar-item:hover .item-title{
+    color: white;
+  }
+  .drop-menu {
     position: absolute;
     top: 100%;
     left: 0%;
@@ -32,59 +38,59 @@
     padding: 0;
     z-index: 99;
   }
-  ul.drop-menu li:last-child {
+  .drop-menu .drop-menu-item:last-child {
     border-radius: 0px 0px 5px 5px;
   }
-  ul.drop-menu li {
+  .drop-menu .drop-menu-item {
     background-color: white;
     color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid lightgray;
   }
 
-  ul.drop-menu li {
+  .drop-menu .drop-menu-item {
     display: none;
   }
   
-  li:hover > ul.drop-menu li {
+  li:hover > .drop-menu .drop-menu-item {
     display: block;
   }
   
-  li:hover > ul.drop-menu.menu-2 {
+  li:hover > .drop-menu.menu-2 {
     perspective: 1000px;
   }
-  li:hover > ul.drop-menu.menu-2 li {
+  li:hover > .drop-menu.menu-2 .drop-menu-item {
     opacity: 0;
     transform-origin: top center;
   }
-  li:hover > ul.drop-menu.menu-2 li:nth-child(1) {
+  li:hover > .drop-menu.menu-2 .drop-menu-item:nth-child(1) {
     animation-name: menu2;
     animation-duration: 300ms;
     animation-delay: -170ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  li:hover > ul.drop-menu.menu-2 li:nth-child(2) {
+  li:hover > .drop-menu.menu-2 .drop-menu-item:nth-child(2) {
     animation-name: menu2;
     animation-duration: 300ms;
     animation-delay: -40ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  li:hover > ul.drop-menu.menu-2 li:nth-child(3) {
+  li:hover > .drop-menu.menu-2 .drop-menu-item:nth-child(3) {
     animation-name: menu2;
     animation-duration: 300ms;
     animation-delay: 90ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  li:hover > ul.drop-menu.menu-2 li:nth-child(4) {
+  li:hover > .drop-menu.menu-2 .drop-menu-item:nth-child(4) {
     animation-name: menu2;
     animation-duration: 300ms;
     animation-delay: 220ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  li:hover > ul.drop-menu.menu-2 li:nth-child(5) {
+  li:hover > .drop-menu.menu-2 .drop-menu-item:nth-child(5) {
     animation-name: menu2;
     animation-duration: 300ms;
     animation-delay: 350ms;
@@ -92,7 +98,7 @@
     animation-fill-mode: forwards;
     margin-top: -1px;
   }
-  li:hover > ul.drop-menu.menu-2 li:nth-child(6) {
+  li:hover > .drop-menu.menu-2 .drop-menu-item:nth-child(6) {
     animation-name: menu2;
     animation-duration: 300ms;
     animation-delay: 480ms;
@@ -120,6 +126,9 @@
     font-size: 14px !important;
   }
 
+  .drop-menu .drop-menu-item:hover .nav-link{ color: white; }
+
+  .drop-menu .drop-menu-item:hover{ background-color: var(--hover); }
 
 
 
