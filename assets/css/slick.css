@@ -135,9 +135,9 @@
     transition: 0.4s;
 }
 .slick-arrow:hover{
-    border-color: var(--primary);
-    background-color: white;
-    color: var(--primary);
+    border-color: transparent;
+    background-color: var(--hover);
+    color: var(--white);
 }
 .slick-arrow.left-arrow {
     left: 0;

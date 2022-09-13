@@ -71,14 +71,58 @@ input:focus,button:focus {outline: none; box-shadow: none;}
 
 .text-justify{ text-align: justify; }
 
-.section-title {
+/*------------ SECTION TITLE CSS -----------*/
+  .section-title {
+    margin: 30px 0;
+    position: relative;
+
+  }
+  .title-heading {
+    position: relative;
+    padding: 0;
+    margin: 0;
     font-size: 38px;
     color: black;
     font-family: var(--pfamily);
     font-weight: bold;
     font-style: italic;
-    margin: 30px 0;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  .section-title .title-heading {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  .section-title .title-heading:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: var(--primary);
+  }
+  .section-title .title-heading:after {
+    width: 150px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 10px;
+    left: 50%;
+    margin-left: -70px;
+    background-color: var(--primary);
 }
+  .title-heading:before,
+  .title-heading:after {
+    background-color: var(--primary);
+  }
+
+  
 
 /*------------ SCROLLBAR CSS -----------*/
 .scroll::-webkit-scrollbar-track{

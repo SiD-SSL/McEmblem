@@ -3,7 +3,185 @@
     height: 480px;
     overflow: hidden;
 }
+
+
+
 /* ABOUT US SECTION */
-.aboutus-section{
-    
+.about-section .item{
+    position: relative;
+    overflow: hidden;
+    transition: 0.6s;
 }
+.about-section .item .text{
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    z-index: 9;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--text);
+}
+.about-section .left-side .item .img {
+    width: 100%;
+    height: 484px;
+    overflow: hidden;
+}
+.about-section .right-side .item .img {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+.about-section .item .img{
+    border-radius: 4px;
+}
+.about-section .right-side .item {
+    margin-bottom: 15px;
+}
+.about-section .item .img img{
+    transform: scale(1);
+    transition: 0.6s;
+}
+.about-section .item:hover .img img{
+    transform: scale(1.1);
+}
+.about-section .item .text{
+    transition: 0.6s;
+}
+.about-section .item:hover .text{
+    color: var(--hover);
+}
+/* ABOUT US SECTION END */
+
+
+/* SERVICE SECTION */
+.service-section .item .text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: var(--primary);
+    transition: 0.4s;
+}
+.service-section .item .text{
+    color: var(--text);
+}
+.service-section .item:hover .text{
+    color: var(--white);
+}
+.service-section .item{
+    position: relative;
+    transition: 0.4s;
+}
+.service-section .item .img {
+    padding: 10px 10px 25px 10px;
+    background: lightgray;
+    transition: 0.4s;
+}
+.service-section .item:hover .img {
+    background: var(--hover);
+}
+.service-section .item .img .img-body{
+    background-color: white;
+}
+/* SERVICE SECTION END */
+
+
+/* NEW ARRIVAL SECTION */
+.new-arrival-section .item {
+    border: 1px solid lightgray;
+    margin: 0 15px;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.5s;
+}
+.new-arrival-section .item:hover{
+    border: 1px solid var(--hover);
+}
+.new-arrival-section .item .img {
+    padding: 5px 10px;
+    width: 100%;
+    height: 215px;
+}
+.new-arrival-section .item .text{
+    background-color: transparent;
+    transition: 0.6s;
+    height: 118px;
+    position: relative;
+}
+.new-arrival-section .item .text-body{
+    transition: 0.5s;
+}
+.new-arrival-section .item .text-body{
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    padding-top: 5px;
+    z-index: 99;
+    transition: 0.5s;
+}
+.new-arrival-section .item:hover .text-body{
+    bottom: 0;
+    z-index: 99;
+    background: var(--hover);
+}
+.new-arrival-section .item:hover .text .name{
+    color: white;
+}
+.new-arrival-section .item .text .name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: initial;
+    padding: 0px 10px 0px 10px;
+    transition: 0.5s;
+}
+.new-arrival-section .item:hover .text .short-description{
+    color: white;
+}
+.new-arrival-section .item .text .short-description {
+    line-height: initial;
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+.new-arrival-section .item .text .view-more {
+    padding: 5px 0;
+    width: 100%;
+    background: lightgray;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.new-arrival-section .item:hover .text .view-more{
+    background-color: var(--hover);
+    color: white;
+}
+.new-arrival-section .item .text .view-more i {
+    margin-left: 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    background: var(--primary);
+    font-size: 14px;
+    color: white;
+    transition: 0.5s;
+}
+.new-arrival-section .item:hover .text .view-more i{
+    background: var(--white);
+    color: var(--hover);
+} 
+.new-arrival-section .slick-arrow.left-arrow {
+    left: -55px;
+}
+.new-arrival-section .slick-arrow.right-arrow {
+    right: -55px;
+}
+
+/* NEW ARRIVAL SECTION END */
+
