@@ -20,7 +20,7 @@
     font-style: italic;
     font-weight: 800;
     font-size: 30px;
-    color: var(--text);
+    color: var(--white);
 }
 .about-section .left-side .item .img {
     width: 100%;
@@ -185,3 +185,195 @@
 
 /* NEW ARRIVAL SECTION END */
 
+
+/* NEWS SECTION */
+.news-section .item {
+    border: 1px solid transparent;
+    margin: 0 15px;
+    border-radius: 4px;
+    transition: 0.5s;
+    position: relative;
+}
+.news-section .item .page-date {
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 4px;
+    padding: 2px 10px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.news-section .item:hover .page-date{
+    background-color: var(--hover);
+    color: white;
+}
+.news-section .item:hover{
+    box-shadow: var(--shadow);
+}
+.news-section .item .img {
+    padding: 5px 0px;
+    width: 100%;
+    height: 215px;
+    overflow: hidden;
+}
+.news-section .item .img img{
+    transform: scale(1);
+    transition: 0.5s;
+} 
+.news-section .item:hover .img img{
+    transform: scale(1.1);
+} 
+.news-section .item .text {
+    background-color: transparent;
+    transition: 0.6s;
+    position: relative;
+    padding: 10px 15px 15px 15px;
+}
+.news-section .item .text .name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: initial;
+    padding: 0px 10px 0px 10px;
+    transition: 0.5s;
+}
+.news-section .item .text .short-description {
+    line-height: initial;
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+.news-section .item .text .view-more {
+    padding: 5px 10px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.news-section .item .text .view-more i {
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: center;
+    background: var(--primary);
+    font-size: 14px;
+    color: white;
+    transition: 0.5s;
+}
+.news-section .item:hover .text .view-more i{
+    background: var(--hover);
+}
+/* NEWS SECTION END */
+
+
+/* VIDEO SECTION START */
+.video-section .item {
+    width: 100%;
+    padding: 15px;
+}
+.video-section .item .img-body{
+    position: relative;
+}
+.video-section .item .play {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(51, 51, 51, 0.1);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.video-section .item .play i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary);
+    color: white;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.video-section .item:hover .play i{
+    background-color: var(--hover);
+}
+.video-section .item .text {
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.video-section .item:hover .text{
+    color: var(--hover);
+}
+/* VIDEO SECTION END */
+
+
+/* VIDEO SECTION START */
+.team-section .item {
+    width: 100%;
+    padding: 30px;
+}
+.team-section .item .img-body {
+    position: relative;
+    overflow: hidden;
+}
+.team-section .item .img-body .img{
+    overflow: hidden;
+    height: 250px;
+}
+.team-section .item .play {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.team-section .item .play i{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: var(--primary);
+    color: white;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    display: none;
+    transition: 0.5s;
+}
+.team-section .item:hover .play i{
+    display: block;
+    background-color: var(--hover);
+}
+.team-section .item .text {
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.team-section .item .text .designation{
+    font-weight: 400 !important;
+}
+.team-section .item:hover .text{
+    color: var(--hover);
+}
+.team-section .slick-arrow.left-arrow {
+    left: -55px;
+}
+.team-section .slick-arrow.right-arrow {
+    right: -55px;
+}
+/* VIDEO SECTION END */
