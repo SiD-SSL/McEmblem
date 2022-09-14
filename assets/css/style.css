@@ -93,7 +93,7 @@
 /* NEW ARRIVAL SECTION */
 .new-arrival-section .item {
     border: 1px solid lightgray;
-    margin: 0 15px;
+    margin: 0 10px;
     border-radius: 4px;
     text-align: center;
     transition: 0.5s;
@@ -133,7 +133,7 @@
 }
 .new-arrival-section .item .text .name {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: initial;
     padding: 0px 10px 0px 10px;
     transition: 0.5s;
@@ -143,7 +143,7 @@
 }
 .new-arrival-section .item .text .short-description {
     line-height: initial;
-    font-size: 15px;
+    font-size: 14px;
     margin: 5px 0;
     padding: 5px 10px;
     transition: 0.5s;

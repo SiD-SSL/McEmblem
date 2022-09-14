@@ -1,7 +1,8 @@
 .header-section{
     /* background: linear-gradient(to bottom, #0A8647, #fff); */
-    background: rgb(10,134,71);
-    background: linear-gradient(180deg, rgba(10,134,71,0.9) 0%, rgba(255,255,255,1) 100%);
+    background: #f4f4f4;
+    /* background: rgb(10,134,71);
+    background: linear-gradient(180deg, rgba(10,134,71,0.9) 0%, rgba(255,255,255,1) 100%); */
 }
 .header {
     transition: all .5s;
@@ -15,7 +16,7 @@
     line-height: 25px;
     border-radius: 3px;
     text-align: center;
-    background-color: var(--black);
+    background-color: var(--primary);
     color: white;
 }
 .header .social .social-item i{
@@ -43,11 +44,11 @@
 }
 .header .header-left a,
 .header .header-left span{
-    color: var(--black);
+    color: var(--primary);
 }
 .header .header-left .phone i,
 .header .header-left .email i{
-    color: var(--black);
+    color: var(--primary);
 }
 .header .header-left .phone a:hover,
 .header .header-left .email a:hover{

@@ -59,7 +59,7 @@ $('.banner-slider').slick({
 $('.arrival-slider').slick({
     dots: false,
 	arrows: true,
-    autoplay: false,
+    autoplay: true,
 	autoplaySpeed: 1500,
     infinite: true,
     speed: 1000,
@@ -115,7 +115,7 @@ $('.arrival-slider').slick({
 $('.team-slider').slick({
     dots: false,
 	arrows: true,
-    autoplay: false,
+    autoplay: true,
 	autoplaySpeed: 1500,
     infinite: true,
     speed: 1000,
