@@ -238,6 +238,9 @@
     padding: 0px 10px 0px 10px;
     transition: 0.5s;
 }
+.news-section .item .text .name:hover{
+    color: var(--hover);
+}
 .news-section .item .text .short-description {
     line-height: initial;
     font-size: 15px;
@@ -397,10 +400,11 @@ footer{
     font-size: 20px;
     font-weight: 600;
 }
-.footer .company-name{
+.footer .company-name {
     font-size: 20px;
     font-weight: 600;
-    width: 80%;
+    width: 75%;
+    margin-right: 4%;
 }
 .footer .barcode{
     width: 20%;
