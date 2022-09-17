@@ -1,0 +1,73 @@
+.image-show {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.image-show .product-details-wish {
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    font-size: 24px;
+    color: #8d8787;
+}
+.image-show .product-details-wish.active{
+    color: var(--primary);
+}
+.small-img {
+width: 350px;
+height: 70px;
+position: relative;
+left: 0px;
+margin: 0 auto;
+margin-top: 10px;
+}
+
+.small-img .icon-left, .small-img .icon-right {
+width: 12px;
+height: 24px;
+cursor: pointer;
+position: absolute;
+top: 0;
+bottom: 0;
+margin: auto 0;
+}
+
+.small-img .icon-left { transform: rotate(180deg) }
+.small-img .icon-right {
+    right: -45px;
+    font-size: 24px;
+}
+.small-img .icon-left {
+    left: -45px;
+    font-size: 24px;
+}
+
+.small-img .icon-left:hover, .small-img .icon-right:hover { color: var(--hover); }
+
+.small-container {
+    width: 380px;
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    left: -10px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.small-container div {
+width: 800%;
+position: relative;
+}
+
+.small-container .show-small-img {
+width: 70px;
+height: 70px;
+margin-right: 6px;
+cursor: pointer;
+float: left;
+}
+
+/* .small-container .show-small-img:last-of-type { margin-right: 0; border: none !important; } */
+.small-container .show-small-img:last-of-type { 
+    margin-right: 0; 
+}
