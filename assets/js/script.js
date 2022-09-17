@@ -49,6 +49,7 @@ $(window).scroll(function(){
 // products toggle
 $(document).ready(function() {
     $('#show-hidden-menu').click(function() {
+      $('#show-hidden-menu').toggleClass("rotate-icon");
       $('.hidden-menu').slideToggle("fast");
     });
 });

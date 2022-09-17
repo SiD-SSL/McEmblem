@@ -1,9 +1,185 @@
-.page-banner{
-
+.product-section .product-body {
+    margin-bottom: 20px;
 }
-.page-banner .img{
+.product-section .left-side {
+    padding-left: 0;
+}
+.product-section .right-side{
+    padding-right: 0;
+}
+/* categories */
+.product-section .category-menu {
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+.product-section .category-menu .title {
+    background: #f4f4f4;
+    padding: 2px 5px;
+}
+.product-section .category-menu .title span {
+    font-weight: 800;
+    font-size: 20px;
+    font-style: italic;
+}
+.product-section .category-menu .title .icon {
+    float: right;
+    margin-top: 4px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    padding: 0px 9px;
+    margin-right: 1px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.product-section .rotate-icon .icon i{
+    transition: 0.5s;
+}
+.product-section .rotate-icon .icon i{
+    transform: rotate(-90deg);
+}
+.product-section .category-menu{
+    margin-top: 15px;
+}
+.product-section .category-menu .category-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    transition: 0.4s;
+}
+.product-section .category-menu .category-item:hover{
+    border-color: var(--hover);
+}
+.product-section .category-menu .category-item:last-child{
+    border-bottom: none;
+}
+.product-section .category-menu .category-item .img {
+    width: 50px;
+    height: 50px;
+    transform: scale(1);
+    transition: 0.4s;
+    overflow: hidden;
+}
+.product-section .category-menu .category-item:hover .img{
+    transform: scale(1.1);
+}
+.product-section .category-menu .category-item span {
+    font-weight: 600;
+    margin-left: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.product-section .category-menu .category-item:hover span {
+    color: var(--hover);
+}
+/* products */
+.product-section .product-menu {
+    margin: 30px 0 15px 0;
+}
+.product-section .product-menu .title span{
+    font-weight: 800;
+    font-size: 20px;
+    font-style: italic;
+}
+.product-section .product-menu .product-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.product-section .product-menu .product-item .img {
+    width: 38%;
+    height: 100px;
+    transform: scale(1);
+    transition: 0.4s;
+    overflow: hidden;
+}
+.product-section .product-menu .product-item:hover .img {
+    transform: scale(1.1);
+}
+.product-section .product-menu .product-item .name {
+    width: 60%;
+    font-size: 14px;
+    margin-left: 2%;
+    transition: 0.4s;
+}
+.product-section .product-menu .product-item:hover .name{
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* product items */
+
+button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 30px;
+    background: rgba(0,0,0,0.09);
+  }
+  button::before, button::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  
+  span::before, span::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  button:hover::before, button:hover::after{
     width: 100%;
-    height: 360px;
-}
-
-
+  }
+  button:hover span::before, button:hover span::after{
+    height: 100%;
+  }
+  
+  /*----- button 3 -----*/
+  .product .item::after{
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.6s;
+  }
+  .product .item span::after{
+    transition-delay: 0.4s;
+    right: 0;
+    bottom: 0
+  }
+  .product .item::before{
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+  }
+  .product .item span::before{
+    transition-delay: 0s;
+    left: 0;
+    top: 0;
+  }
+  .product .item:hover::after{
+    transition-delay: 0s;
+  }
+  .product .item:hover span::after{
+    transition-delay: 0.2s;
+  }
+  .product .item:hover::before{
+    transition-delay: 0.4s;
+  }
+  .product .item:hover span::before{
+    transition-delay: 0.6s;
+  }
+  
