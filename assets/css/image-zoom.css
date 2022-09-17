@@ -32,13 +32,12 @@ bottom: 0;
 margin: auto 0;
 }
 
-.small-img .icon-left { transform: rotate(180deg) }
 .small-img .icon-right {
-    right: -45px;
+    right: -43px;
     font-size: 24px;
 }
 .small-img .icon-left {
-    left: -45px;
+    left: -51px;
     font-size: 24px;
 }
 
