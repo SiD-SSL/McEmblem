@@ -39,8 +39,8 @@
     text-transform: uppercase;
 }
 .header .logo-img {
-    width: 100px;
-    height: 115px;
+    width: 61%;
+    height: 140px;
 }
 .header .header-left a,
 .header .header-left span{
