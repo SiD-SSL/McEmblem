@@ -113,73 +113,95 @@
 }
 
 /* product items */
-
-button{
-    display: inline-block;
-    position: relative;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
-    margin: 20px 30px;
-    background: rgba(0,0,0,0.09);
-  }
-  button::before, button::after{
-    content:"";
-    width: 0;
-    height: 2px;
-    position: absolute;
-    transition: all 0.2s linear;
-    background: #fff;
-  }
-  
-  span::before, span::after{
-    content:"";
-    width:2px;
-    height:0;
-    position: absolute;
-    transition: all 0.2s linear;
-    background: #fff;
-  }
-  button:hover::before, button:hover::after{
+.product-section .item {
+    border: 1px solid lightgray;
+    margin: 0px;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.product-section .item:hover{
+    border: 1px solid var(--hover);
+}
+.product-section .item .img {
+    padding: 5px 10px;
     width: 100%;
-  }
-  button:hover span::before, button:hover span::after{
-    height: 100%;
-  }
-  
-  /*----- button 3 -----*/
-  .product .item::after{
+    height: 215px;
+}
+.product-section .item .text{
+    background-color: transparent;
+    transition: 0.6s;
+    height: 118px;
+    position: relative;
+}
+.product-section .item .text-body{
+    transition: 0.5s;
+}
+.product-section .item .text-body{
+    position: absolute;
+    bottom: -45px;
     left: 0;
+    padding-top: 5px;
+    z-index: 99;
+    transition: 0.5s;
+}
+.product-section .item:hover .text-body{
     bottom: 0;
-    transition-delay: 0.6s;
-  }
-  .product .item span::after{
-    transition-delay: 0.4s;
-    right: 0;
-    bottom: 0
-  }
-  .product .item::before{
-    right: 0;
-    top: 0;
-    transition-delay: 0.2s;
-  }
-  .product .item span::before{
-    transition-delay: 0s;
-    left: 0;
-    top: 0;
-  }
-  .product .item:hover::after{
-    transition-delay: 0s;
-  }
-  .product .item:hover span::after{
-    transition-delay: 0.2s;
-  }
-  .product .item:hover::before{
-    transition-delay: 0.4s;
-  }
-  .product .item:hover span::before{
-    transition-delay: 0.6s;
-  }
-  
+    z-index: 99;
+    background: var(--hover);
+}
+.product-section .item:hover .text .name{
+    color: white;
+}
+.product-section .item .text .name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: initial;
+    padding: 0px 10px 0px 10px;
+    transition: 0.5s;
+}
+.product-section .item:hover .text .short-description{
+    color: white;
+}
+.product-section .item .text .short-description {
+    line-height: initial;
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+.product-section .item .text .view-more {
+    padding: 5px 0;
+    width: 100%;
+    background: lightgray;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.product-section .item:hover .text .view-more{
+    background-color: var(--hover);
+    color: white;
+}
+.product-section .item .text .view-more i {
+    margin-left: 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    background: var(--primary);
+    font-size: 14px;
+    color: white;
+    transition: 0.5s;
+}
+.product-section .item:hover .text .view-more i{
+    background: var(--white);
+    color: var(--hover);
+} 
+.product-section .slick-arrow.left-arrow {
+    left: -55px;
+}
+.product-section .slick-arrow.right-arrow {
+    right: -55px;
+}
