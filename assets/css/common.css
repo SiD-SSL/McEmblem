@@ -132,7 +132,7 @@ input:focus,button:focus {outline: none; box-shadow: none;}
 	background-color: #ffffff;
 }
 .scroll::-webkit-scrollbar{
-	width: 5px;
+	width: 3px;
 	background-color: #F5F5F5;
 }
 .scroll::-webkit-scrollbar-thumb{
