@@ -421,7 +421,7 @@ footer{
 .footer ul li a{
 	transition: 0.5s;
     color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
+    font-size: 13px;
 }
 .footer ul li a:hover{
 	color: var(--hover);

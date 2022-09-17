@@ -1,6 +1,11 @@
 .header-section{
     /* background: linear-gradient(to bottom, #0A8647, #fff); */
-    background: #f4f4f4;
+    /* background: #f4f4f4; */
+    /* background: #FBFAF5; */
+
+    background: url('../images/bg.jpg') no-repeat center;
+    background-size: cover;
+
     /* background: rgb(10,134,71);
     background: linear-gradient(180deg, rgba(10,134,71,0.9) 0%, rgba(255,255,255,1) 100%); */
 }
