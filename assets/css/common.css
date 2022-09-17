@@ -121,7 +121,9 @@ input:focus,button:focus {outline: none; box-shadow: none;}
   .title-heading:after {
     background-color: var(--primary);
   }
-
+  .page-title{
+    margin-bottom: 10px !important;
+  }
   
 
 /*------------ SCROLLBAR CSS -----------*/
@@ -138,3 +140,29 @@ input:focus,button:focus {outline: none; box-shadow: none;}
 }
 
 
+/* BREADCRUMB CSS */
+.breadcrumb {
+  justify-content: center;
+}
+.breadcrumb .breadcrumb-item i {
+  font-size: 12px;
+  color: black;
+}
+.breadcrumb .breadcrumb-item.active i {
+  color: var(--primary);
+}
+.breadcrumb .breadcrumb-item a {
+    font-size: 12px;
+    font-weight: 600;
+}
+.breadcrumb .breadcrumb-item a:hover{
+  text-decoration: underline;
+  color: var(--hover);
+}
+.breadcrumb .breadcrumb-item.active a:hover{
+  text-decoration: underline;
+  color: var(--hover);
+}
+.breadcrumb .breadcrumb-item.active a {
+    color: var(--primary);
+}

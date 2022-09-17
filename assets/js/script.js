@@ -41,3 +41,14 @@ $(window).scroll(function(){
         $("#fixedNavBar").removeClass("d-block fixed");
     }
 })
+
+
+
+
+
+// products toggle
+$(document).ready(function() {
+    $('#show-hidden-menu').click(function() {
+      $('.hidden-menu').slideToggle("fast");
+    });
+});
