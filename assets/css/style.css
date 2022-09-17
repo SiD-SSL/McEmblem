@@ -157,7 +157,7 @@
     transition: 0.5s;
 }
 .new-arrival-section .item:hover .text .view-more{
-    background-color: var(--hover);
+    background-color: var(--black);
     color: white;
 }
 .new-arrival-section .item .text .view-more i {
